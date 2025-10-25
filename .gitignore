@@ -1,0 +1,8 @@
+# Ignore all data...
+*/data/**/*
+
+# ...add samples and their structure back in
+!*/
+!*/data/
+!*/data/**/
+!*/data/**/*-sample.txt
