@@ -1,9 +1,9 @@
 <?php
 /**
  * Quest 1: The Battle for the Farmlands
- ** Part 1: 0.00035 Seconds (4m15s)
- ** Part 2: 0.00053 Seconds (12m07s)
- ** Part 3: 0.00116 Seconds (16m00s)
+ ** Part 1: 0.00035 Seconds (4m15s - 3635 - Would be 3rd place)
+ ** Part 2: 0.00053 Seconds (12m07s - 3072 - Would be 4th place)
+ ** Part 3: 0.00116 Seconds (16m00s - 2840 - Would be 3rd place)
  */
 
 // The usual
@@ -30,13 +30,13 @@ function part_one( $dataset ) {
 		'C' => 3,
 	];
 
-	$totalPotions = 0;
+	$total_potions = 0;
 
 	foreach( $dataset as $creature ) {
-		$totalPotions += $health[$creature];
+		$total_potions += $health[$creature];
 	}
 
-	echo $totalPotions;
+	echo $total_potions;
 
 }
 
@@ -51,23 +51,23 @@ function part_two( $dataset ) {
 		'x' => 0,
 	];
 
-	$totalPotions = 0;
+	$total_potions = 0;
 
 	foreach( $dataset as $group ) {
 		$creatures = str_split( $group, 1 );
 
 		foreach( $creatures as $creature ) {
-			$totalPotions += $health[$creature];
+			$total_potions += $health[$creature];
 		}
 
 		// Additional potions needed for dual battle (one per creature)
 		if ( ! str_contains( $group, 'x' ) ) {
-			$totalPotions += 2;
+			$total_potions += 2;
 		}
 
 	}
 
-	echo $totalPotions;
+	echo $total_potions;
 }
 
 // Part Three
@@ -81,13 +81,13 @@ function part_three( $dataset ) {
 		'x' => 0,
 	];
 
-	$totalPotions = 0;
+	$total_potions = 0;
 
 	foreach( $dataset as $group ) {
 		$creatures = str_split( $group, 1 );
 
 		foreach( $creatures as $creature ) {
-			$totalPotions += $health[$creature];
+			$total_potions += $health[$creature];
 		}
 
 		// Remove blank battle spots
@@ -95,17 +95,17 @@ function part_three( $dataset ) {
 
 		// If two opponents, add two (one per creature)
 		if ( $opp === 2 ) {
-			$totalPotions += 2;
+			$total_potions += 2;
 		}
 
 		// If three opponents, add six (two per creature)
 		if ( $opp === 3 ) {
-			$totalPotions += 6;
+			$total_potions += 6;
 		}
 
 	}
 
-	echo $totalPotions;
+	echo $total_potions;
 
 }
 
