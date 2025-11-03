@@ -12,12 +12,9 @@ $data_1 = file_get_contents('data/DAY/data-01' . $sample_ext );
 $data_2 = file_get_contents('data/DAY/data-02' . $sample_ext );
 $data_3 = file_get_contents('data/DAY/data-03' . $sample_ext );
 
-// explode("\n", $data_1);
-// str_split($data_1, 1);
-
-$dataset_1 = str_split($data_1, 1);
-$dataset_2 = str_split($data_2, 2);
-$dataset_3 = str_split($data_3, 3);
+$dataset_1 = str_split($data_1, 1); // explode("\n", $data_1);
+$dataset_2 = str_split($data_2, 2); // explode("\n", $data_2);
+$dataset_3 = str_split($data_3, 3); // explode("\n", $data_3);
 
 include_once( '../functions.php' );
 
@@ -31,7 +28,7 @@ function part_two( $dataset ) {
 	# Do More Things
 }
 
-// Part Two
+// Part Three
 function part_three( $dataset ) {
 	# Do Even More Things
 }
