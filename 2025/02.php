@@ -8,6 +8,8 @@
 
 // Big Maps
 ini_set('memory_limit', '10G');
+
+// Output Display?
 $show_map = false;
 
 // The usual
@@ -22,8 +24,6 @@ $data_3 = file_get_contents('data/02/data-03' . $sample_ext );
 $dataset_1 = $data_1;
 $dataset_2 = $data_2;
 $dataset_3 = $data_3;
-
-include_once( '../functions.php' );
 
 // Part One
 function part_one( $dataset ) {
