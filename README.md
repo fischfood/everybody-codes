@@ -2,6 +2,12 @@
 
 My solutions to the [Everybody Codes](https://everybody.codes) puzzles.
 
+Scoreboard times are added to the top of each file.
+
+If I completed it day of, I will add my leaderboard time (not local). If I took a break, or started at a later point, I will note my local time and say what place it would have been if calculatable.
+
+Compiling time will also be stated. I use PHP. There will be some long ones.
+
 To prevent hosting any puzzle data, I will only have the sample data commited to this repository.
 
 ## Bash Commands (using Mac)
